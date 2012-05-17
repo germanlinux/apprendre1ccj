@@ -2,7 +2,7 @@ require 'rubygems'
 require 'sinatra'
 
 configure do
-  set :public_folder,  "/static"
+  set :public_folder,  "static"
 end
 
 get '/' do
