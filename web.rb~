@@ -6,5 +6,5 @@ configure do
 end
 
 get '/' do
-   erb 'Hello, world'
+  "Hello, world"
 end
