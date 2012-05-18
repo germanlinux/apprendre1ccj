@@ -12,11 +12,12 @@
       <div class="navbar-inner">
         <div class="container">
 
-            <a class="brand" href="#">
+            <a class="brand" href="/">
               Apprendre 1 chose chaque jour
             </a>
 
             <ul class="nav  pull-right">
+              <li><a href="/">Accueil</a></li>
               <li><a href="/about">A propos</a></li>
             </ul>
         </div>
@@ -30,5 +31,7 @@
 		<% end %>
     	<%= yield %>
 	</div>
+  <div  class="span8"> 
+  <address>contact: german.eric AT gmail.com </address> </div>
   </body>
 </html>
