@@ -31,7 +31,7 @@
 		<% end %>
     	<%= yield %>
 	</div>
-  <div  class="span8"> 
+  <div  class="footer"> 
   <address>contact: german.eric AT gmail.com </address> </div>
   </body>
 </html>
