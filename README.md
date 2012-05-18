@@ -6,6 +6,6 @@ Cette application fonctionne dans le cloud Heroku
 
 Elle est basée sur le framework Sinatra.
 
-(lien vers sinatra [http://www.sinatrarb.com/])
+(lien vers sinatra [http://www.sinatrarb.com] )
 
 Et l'habillage bootstrap [https://github.com/pokle/sinatra-bootstrap] de twitter   

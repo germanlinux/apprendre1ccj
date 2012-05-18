@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-  	<title>Apprendre1ccj</title>
+  	<title>Apprendre1ccj-v0</title>
     <script src="/lib/jquery-1.7.min.js" type="text/javascript"></script>
     <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
@@ -17,7 +17,7 @@
             </a>
 
             <ul class="nav  pull-right">
-              <li><a href="/">A propos</a></li>
+              <li><a href="/about">A propos</a></li>
             </ul>
         </div>
       </div>
