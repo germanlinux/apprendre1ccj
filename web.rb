@@ -2,15 +2,16 @@ require 'rubygems'
 require 'sinatra'
 
 # initialisation 
-data = ''
-f  = File.open('Gemfile.lock','r') 
-f.each_line do |line| 
-    data << "#{line}" 
-    end
+
 mode_debug = "Mode debug OFF<p>"
 configure do
-# set :public_folder,  "static"
-#    enable :logging 
+    data = ''
+        f  = File.open('Gemfile.lock','r') 
+            f.each_line do |line| 
+            data << "#{line}" 
+            end
+     set :infogem,data 
+
 end
 before do
     # debug available in  local but not in cloud
@@ -21,7 +22,7 @@ before do
 end
 get '/about' do
     @mode_debug = mode_debug
-    @data = data
+    @data = settings.infogem
     erb :about
 end
 
