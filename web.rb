@@ -27,5 +27,5 @@ get '/about' do
 end
 
 get '/' do
-   erb 'Hello, world'
+   erb :index
 end

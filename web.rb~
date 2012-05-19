@@ -5,8 +5,6 @@ require 'sinatra'
 
 mode_debug = "Mode debug OFF<p>"
 configure do
-# set :public_folder,  "static"
-#    enable :logging 
     data = ''
         f  = File.open('Gemfile.lock','r') 
             f.each_line do |line| 
