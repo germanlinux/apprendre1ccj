@@ -1,8 +1,19 @@
 require 'rubygems'
 require 'sinatra'
+# Helpers 
+helpers do 
+    def libelle(tag) 
+      myhtag = {'Histoire'     => 'danger' ,
+                'Geo'          => 'warning',   
+                'Industrie'    => 'info'   ,
+                'Informatique' => 'success',
+                'Sport'        => 'inverse' 
+               }     
+      "btn-" + myhtag[tag]||='default'
+    end
+end
 
 # initialisation 
-
 mode_debug = "Mode debug OFF<p>"
 configure do
     data = ''
@@ -41,22 +52,6 @@ get '/' do
    une_phrase = settings.phrases[@quantieme]  
    un_jour = une_phrase.split(/;/)
    @tag     =  un_jour[1]
-   if @tag  == "Industrie" then 
-        @ltag =  '<span class="btn-info btn-large disabled">' + @tag + '</span>'
-   end
-   if @tag  == "Informatique" then 
-        @ltag =  '<span class="btn-success btn-large disabled">' + @tag + '</span>'
-   end
-if @tag  == "Histoire" then 
-        @ltag =  '<span class="btn-danger btn-large disabled">' + @tag + '</span>'
-   end
-if @tag  == "Geo" then 
-        @ltag =  '<span class="btn-warning btn-large disabled">' + @tag + '</span>'
-   end
-if @tag  == "Sport" then 
-        @ltag =  '<span class="btn-inverse btn-large disabled">' + @tag + '</span>'
-   end
-
    @content =  un_jour[2]
    un_jour[5].chomp!
    if un_jour[5].to_i > 0 then 
