@@ -1,6 +1,6 @@
 require 'rubygems'
 require 'sinatra'
-# Helper 
+# Helpers 
 helpers do 
     def libelle(tag) 
       myhtag = {'Histoire'     => 'danger' ,
@@ -58,4 +58,8 @@ get '/' do
     @content += "<p>#{un_jour[4]}<p>"
    end
    erb :index
+end
+
+get '/videos' do
+# mettre a jour la liste des videos 
 end

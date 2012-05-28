@@ -59,3 +59,8 @@ get '/' do
    end
    erb :index
 end
+
+get '/videos' do
+# mettre a jour la liste des videos 
+   erb  :videos
+end
