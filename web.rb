@@ -3,13 +3,13 @@ require 'sinatra'
 # Helpers 
 helpers do 
     def libelle(tag) 
-      myhtag = {'Histoire'     => 'danger' ,
-                'Geo'          => 'warning',   
-                'Industrie'    => 'info'   ,
-                'Informatique' => 'success',
-                'Sport'        => 'inverse' 
+      myhtag = {'Histoire'     => '-danger' ,
+                'Geo'          => '-warning',   
+                'Industrie'    => '-info'   ,
+                'Informatique' => '-success',
+                'Sport'        => '-inverse' 
                }     
-      "btn-" + myhtag[tag]||='default'
+      "btn" + myhtag[tag]||=''
     end
 end
 
