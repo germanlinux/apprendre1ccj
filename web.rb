@@ -39,7 +39,7 @@ before do
     time = Time.new
     @quantieme  = time.yday
     @madate    = time.strftime("%d/%m/%Y")
-    @quantieme  = time.yday - 139
+    @quantieme  = time.yday - 169
     
 end
 get '/about' do
